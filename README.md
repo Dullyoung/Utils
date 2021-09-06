@@ -1,5 +1,6 @@
 # Utils
 some dev util
+include base http lib for java
 # how to use?
 - Add it in your root build.gradle at the end of repositories:
 ```gradle
