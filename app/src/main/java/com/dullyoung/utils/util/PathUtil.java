@@ -305,7 +305,7 @@ public class PathUtil {
             int read;
             byte[] buffer = new byte[8 * 1024];
             //自己定义拷贝文件路径
-            targetFile = new File(context.getCacheDir().getAbsolutePath(), fileName);
+            targetFile = new File(context.getExternalCacheDir().getAbsolutePath(), fileName);
 
             OutputStream outputStream = new FileOutputStream(targetFile);
 
