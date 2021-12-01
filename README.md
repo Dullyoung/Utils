@@ -14,6 +14,6 @@ allprojects {
 -  Add the dependency
 ```gradle
 dependencies {
-	        implementation 'com.github.dullyoung:utils:1.0'
+	        implementation 'com.github.dullyoung:utils:1.0.1'
 	}
 ```
