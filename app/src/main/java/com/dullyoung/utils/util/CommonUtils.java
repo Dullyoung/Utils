@@ -7,6 +7,7 @@ import android.os.Build;
 
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
+import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -30,9 +31,9 @@ public class CommonUtils {
     }
 
 
-    public static Activity findActivity(@NonNull Context context) {
+    public static FragmentActivity findActivity(@NonNull Context context) {
         if (context instanceof Activity) {
-            return (Activity) context;
+            return (FragmentActivity) context;
         } else if (context instanceof ContextWrapper) {
             return findActivity(((ContextWrapper) context).getBaseContext());
         } else {
